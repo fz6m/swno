@@ -16,6 +16,7 @@ import { registerTsconfigPaths } from './tsconfig-paths'
 
 import { Compile } from './interface'
 import { DEFAULT_EXTENSIONS, EModule } from './constants'
+import { isDegrade } from './degrade/mjs'
 
 const map: { [file: string]: string | RawSourceMap } = {}
 
@@ -54,6 +55,7 @@ function patchCommonJsLoader(compile: Compile) {
   // @ts-expect-error
   const extensions = module.Module._extensions
   const jsHandler = extensions['.js']
+  const mjsHandler = extensions['.mjs']
 
   extensions['.js'] = function (module: any, filename: string) {
     try {
@@ -66,6 +68,21 @@ function patchCommonJsLoader(compile: Compile) {
       let content = fs.readFileSync(filename, 'utf8')
       content = compile(content, filename, EModule.cjs)
       module._compile(content, filename)
+    }
+  }
+
+  extensions['.mjs'] = function (module: any, filename: string) {
+    try {
+      return mjsHandler.call(this, module, filename)
+    } catch (error: any) {
+      if (isDegrade(filename)) {
+        let content = fs.readFileSync(filename, 'utf8')
+        content = compile(content, filename, EModule.cjs)
+        module._compile(content, filename)
+        return
+      }
+
+      throw error
     }
   }
 }

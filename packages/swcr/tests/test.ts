@@ -139,13 +139,30 @@ test('circular deps', async () => {
   ])
   assert.equal(
     stdout.trim(),
-    `today: 
+    `today:${' '}
   needCoffee: true
   writeBlog: true
-tomorrow: 
+tomorrow:${' '}
   holiday: hopefully!
-  zenMode: 
+  zenMode:${' '}
     forever: true`
+  )
+})
+
+/**
+ * compile fake mjs
+ */
+test('zx v5', async () => {
+  const { stdout } = await execa('node', [
+    '-r',
+    `${process.cwd()}/register.js`,
+    `${process.cwd()}/tests/zx/index.ts`,
+  ])
+  assert.equal(
+    stdout.trim(),
+    `$ echo "123"
+123
+red []`
   )
 })
 
