@@ -1,0 +1,37 @@
+{
+  "name": "swno",
+  "description": "Typescript node runtime powered by swc",
+  "version": "1.0.2",
+  "author": "fz6m",
+  "homepage": "https://github.com/fz6m/swno/tree/main/swno#README",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fz6m/swno"
+  },
+  "keywords": [
+    "swc",
+    "swcr",
+    "swc-register",
+    "typescript-runtime"
+  ],
+  "bin": {
+    "swno": "swno.js"
+  },
+  "files": [
+    "swno.js"
+  ],
+  "scripts": {
+    "push": "npm publish --registry=https://registry.npmjs.com/",
+    "test": "./swno.js ./test/file.ts"
+  },
+  "dependencies": {
+    "@swc/core": "1.2.138",
+    "cross-spawn": "7.0.3",
+    "regenerator-runtime": "0.13.9",
+    "swcr": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.5"
+  },
+  "license": "MIT"
+}

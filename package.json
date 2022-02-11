@@ -1,0 +1,40 @@
+{
+  "version": "1.0.0",
+  "description": "Typescript simple runtime powered by Swc",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "husky install",
+    "push": "changeset",
+    "version-packages": "changeset version",
+    "vp": "pnpm version-packages",
+    "release": "pnpm build && pnpm release:only",
+    "release:only": "changeset publish",
+    "test": "pnpm -r --filter ./packages run test"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.20.0",
+    "@fz6m/eslint-plugin-sakina": "1.0.7",
+    "@typescript-eslint/parser": "5.11.0",
+    "eslint": "8.8.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.3",
+    "only-allow": "^1.0.0",
+    "prettier": "2.5.1"
+  },
+  "lint-staged": {
+    "*.{jsx,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "engines": {
+    "node": ">=14",
+    "pnpm": ">=6.20"
+  },
+  "packageManager": "pnpm@6.20.0",
+  "license": "MIT"
+}

@@ -1,0 +1,52 @@
+{
+  "name": "swcr",
+  "description": "Swc register for node.js. Efficient typescript runtime",
+  "version": "1.0.3",
+  "main": "register.js",
+  "author": "fz6m",
+  "homepage": "https://github.com/fz6m/swno/tree/main/swcr#README",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fz6m/swno"
+  },
+  "files": [
+    "dist",
+    "register.js"
+  ],
+  "keywords": [
+    "swc",
+    "swc-register",
+    "typescript-register",
+    "typescript-runtime"
+  ],
+  "scripts": {
+    "build": "tsup src/node.ts --dts",
+    "test": "npm run build && node -r ./register.js tests/test.ts",
+    "fix": "prettier -c --write \"{src,tests}/**/*.{ts,tsx,.js}\"",
+    "prepublishOnly": "npm run build",
+    "push": "npm publish --registry=https://registry.npmjs.com/"
+  },
+  "devDependencies": {
+    "@swc/core": "1.2.138",
+    "@types/node": "16.11.24",
+    "@types/source-map-support": "0.5.4",
+    "execa": "4.1.0",
+    "find-up": "5.0.0",
+    "pirates": "4.0.5",
+    "source-map": "0.7.3",
+    "source-map-support": "0.5.21",
+    "strip-json-comments": "4.0.0",
+    "tsconfig-paths": "3.12.0",
+    "tsup": "5.11.13",
+    "typescript": "4.5.5",
+    "uvu": "0.5.3"
+  },
+  "peerDependencies": {
+    "@swc/core": "^1.2.138",
+    "regenerator-runtime": "^0.13.9"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "circular-deps-4",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@jest/types": "^27.4.2",
+    "@types/jest": "^27.4.0",
+    "esbuild": "^0.14.9",
+    "esbuild-jest": "^0.5.0",
+    "esbuild-register": "^3.3.1",
+    "jest": "^27.4.5",
+    "ts-node": "^10.4.0"
+  }
+}
