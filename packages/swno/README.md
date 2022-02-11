@@ -1,6 +1,6 @@
 # swno
 
-shortcut usage of [swcr](https://github.com/fz6m/swcr), typescript node runtime powered by swc
+shortcut usage of [swcr](https://www.npmjs.com/package/swcr), typescript node runtime powered by swc
 
 ## Install
 
