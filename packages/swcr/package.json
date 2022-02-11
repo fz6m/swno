@@ -1,7 +1,7 @@
 {
   "name": "swcr",
   "description": "Swc register for node.js. Efficient typescript runtime",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "main": "register.js",
   "author": "fz6m",
   "homepage": "https://github.com/fz6m/swno/tree/main/swcr#README",
@@ -23,7 +23,6 @@
     "build": "tsup src/node.ts --dts",
     "test": "npm run build && node -r ./register.js tests/test.ts",
     "fix": "prettier -c --write \"{src,tests}/**/*.{ts,tsx,.js}\"",
-    "prepublishOnly": "npm run build",
     "push": "npm publish --registry=https://registry.npmjs.com/"
   },
   "devDependencies": {
