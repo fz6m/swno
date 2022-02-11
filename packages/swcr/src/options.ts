@@ -48,7 +48,7 @@ export const getFormat = ({
  * => swcrc target
  * @type {JscTarget}
  */
-export const getTarget = (target: string = 'es2016' /** es7 */): JscTarget => {
+export const getTarget = (target: string = 'es2017' /** es8 */): JscTarget => {
   if (target === 'es6') {
     return 'es2015'
   }
