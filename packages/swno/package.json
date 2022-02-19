@@ -3,7 +3,7 @@
   "description": "Typescript node runtime powered by swc",
   "version": "1.1.0",
   "author": "fz6m",
-  "homepage": "https://github.com/fz6m/swno/tree/main/swno#README",
+  "homepage": "https://github.com/fz6m/swno/tree/main/packages/swno#README",
   "repository": {
     "type": "git",
     "url": "https://github.com/fz6m/swno"
