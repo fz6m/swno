@@ -26,7 +26,7 @@
     "push": "npm publish --registry=https://registry.npmjs.com/"
   },
   "devDependencies": {
-    "@swc/core": "1.2.138",
+    "@swc/core": "1.2.142",
     "@types/node": "16.11.24",
     "@types/source-map-support": "0.5.4",
     "execa": "4.1.0",
@@ -39,10 +39,10 @@
     "tsup": "5.11.13",
     "typescript": "4.5.5",
     "uvu": "0.5.3",
-    "zx": "^5.0.0"
+    "zx": "^5.1.0"
   },
   "peerDependencies": {
-    "@swc/core": "^1.2.138",
+    "@swc/core": "^1.2.142",
     "regenerator-runtime": "^0.13.9"
   },
   "engines": {
