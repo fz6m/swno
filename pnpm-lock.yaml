@@ -374,6 +374,7 @@ packages:
     engines: {node: '>=10'}
     cpu: [arm]
     os: [android]
+    hasBin: true
     requiresBuild: true
     optional: true
 
@@ -382,6 +383,7 @@ packages:
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [android]
+    hasBin: true
     requiresBuild: true
     optional: true
 
@@ -390,6 +392,7 @@ packages:
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [darwin]
+    hasBin: true
     requiresBuild: true
     optional: true
 
@@ -398,6 +401,7 @@ packages:
     engines: {node: '>=10'}
     cpu: [x64]
     os: [darwin]
+    hasBin: true
     requiresBuild: true
     optional: true
 
@@ -406,6 +410,7 @@ packages:
     engines: {node: '>=10'}
     cpu: [x64]
     os: [freebsd]
+    hasBin: true
     requiresBuild: true
     optional: true
 
@@ -414,6 +419,7 @@ packages:
     engines: {node: '>=10'}
     cpu: [arm]
     os: [linux]
+    hasBin: true
     requiresBuild: true
     optional: true
 
@@ -422,6 +428,7 @@ packages:
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [linux]
+    hasBin: true
     requiresBuild: true
     optional: true
 
@@ -430,6 +437,7 @@ packages:
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [linux]
+    hasBin: true
     requiresBuild: true
     optional: true
 
@@ -438,6 +446,7 @@ packages:
     engines: {node: '>=10'}
     cpu: [x64]
     os: [linux]
+    hasBin: true
     requiresBuild: true
     optional: true
 
@@ -446,6 +455,7 @@ packages:
     engines: {node: '>=10'}
     cpu: [x64]
     os: [linux]
+    hasBin: true
     requiresBuild: true
     optional: true
 
@@ -454,6 +464,7 @@ packages:
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [win32]
+    hasBin: true
     requiresBuild: true
     optional: true
 
@@ -462,6 +473,7 @@ packages:
     engines: {node: '>=10'}
     cpu: [ia32]
     os: [win32]
+    hasBin: true
     requiresBuild: true
     optional: true
 
@@ -470,6 +482,7 @@ packages:
     engines: {node: '>=10'}
     cpu: [x64]
     os: [win32]
+    hasBin: true
     requiresBuild: true
     optional: true
 
