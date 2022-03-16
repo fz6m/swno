@@ -25,7 +25,7 @@
     "test": "./swno.js ./test/file.ts"
   },
   "dependencies": {
-    "@swc/core": "1.2.154",
+    "@swc/core": "1.2.156",
     "cross-spawn": "7.0.3",
     "regenerator-runtime": "0.13.9",
     "swcr": "workspace:*"
