@@ -136,7 +136,10 @@ export function register(opts: IRegisterOptions = {}) {
           dynamicImport: true,
           decorators: true,
         },
-        loose: true,
+        /**
+         * https://github.com/swc-project/swc/issues/4048
+         */
+        loose: false,
         target: target,
         transform: {
           legacyDecorator: true,
