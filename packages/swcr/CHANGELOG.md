@@ -1,5 +1,11 @@
 # swcr
 
+## 1.1.5
+
+### Patch Changes
+
+- upgrade deps
+
 ## 1.1.4
 
 ### Patch Changes
