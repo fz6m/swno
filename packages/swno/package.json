@@ -25,13 +25,10 @@
     "test": "./swno.js ./test/file.ts"
   },
   "dependencies": {
-    "@swc/core": "1.2.159",
+    "@swc/core": "1.2.160",
     "cross-spawn": "7.0.3",
     "regenerator-runtime": "0.13.9",
     "swcr": "workspace:*"
-  },
-  "devDependencies": {
-    "typescript": "^4.6.2"
   },
   "license": "MIT"
 }
