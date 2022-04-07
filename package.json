@@ -14,7 +14,7 @@
     "clean:output": "vary clean:output"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.21.1",
+    "@changesets/cli": "^2.22.0",
     "@fz6m/eslint-plugin-sakina": "^1.1.1",
     "@xn-sakina/vary": "^1.0.0",
     "commit-verify": "^1.0.3",
@@ -24,7 +24,7 @@
     "husky": "^7.0.4",
     "lint-staged": "^12.3.7",
     "only-allow": "^1.1.0",
-    "prettier": "^2.6.1",
+    "prettier": "^2.6.2",
     "zx": "^5.2.0",
     "typescript": "4.6.3"
   },
