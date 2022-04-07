@@ -1,5 +1,11 @@
 # swcr
 
+## 1.1.7
+
+### Patch Changes
+
+- upgrade swc version
+
 ## 1.1.6
 
 ### Patch Changes
