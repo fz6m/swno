@@ -17,6 +17,7 @@ importers:
       prettier: ^2.6.2
       typescript: 4.6.3
       zx: ^5.2.0
+      zx-pro: ^6.1.0
     devDependencies:
       '@changesets/cli': 2.22.0
       '@fz6m/eslint-plugin-sakina': 1.1.1_eslint@8.12.0+typescript@4.6.3
@@ -31,6 +32,7 @@ importers:
       prettier: 2.6.2
       typescript: 4.6.3
       zx: 5.2.0
+      zx-pro: 6.1.0
 
   packages/swcr:
     specifiers:
@@ -544,7 +546,7 @@ packages:
   /@types/fs-extra/9.0.13:
     resolution: {integrity: sha512-nEnwB++1u5lVDM2UI4c1+5R+FYaKfaAzS4OococimjVm3nQw3TuzH5UNsocrcTBbhnerblyHj4A49qXbIiZdpA==}
     dependencies:
-      '@types/node': 17.0.17
+      '@types/node': 17.0.23
     dev: true
 
   /@types/is-ci/3.0.0:
@@ -589,6 +591,10 @@ packages:
     resolution: {integrity: sha1-V0/2qGNrwOuueKgBQTb3SbMXfVg=, tarball: '@types/source-map-support/download/@types/source-map-support-0.5.4.tgz'}
     dependencies:
       source-map: 0.6.1
+    dev: true
+
+  /@types/which/2.0.1:
+    resolution: {integrity: sha512-Jjakcv8Roqtio6w1gr0D7y6twbhx6gGgFGF5BLwajPpnOIOxFkakFhCq+LmyyeAz7BX6ULrjBOxdKaCDy+4+dQ==}
     dev: true
 
   /@typescript-eslint/parser/5.15.0_eslint@8.12.0+typescript@4.6.3:
@@ -3361,6 +3367,23 @@ packages:
   /yocto-queue/0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
+    dev: true
+
+  /zx-pro/6.1.0:
+    resolution: {integrity: sha512-X49avOvImVMWzps1CpEBTzNlU6ktrXawTGZNiGhXNKAOitbjulw3YFOor/b+im0cwKeKyEevScVZ5Oy7OfU5gA==}
+    engines: {node: '>= 16.0.0'}
+    dependencies:
+      '@types/fs-extra': 9.0.13
+      '@types/minimist': 1.2.2
+      '@types/which': 2.0.1
+      chalk: 5.0.1
+      fs-extra: 10.0.1
+      globby: 13.1.1
+      minimist: 1.2.6
+      node-fetch: 3.2.3
+      ps-tree: 1.2.0
+      which: 2.0.2
+      yaml: 1.10.2
     dev: true
 
   /zx/5.2.0:

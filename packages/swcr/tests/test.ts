@@ -149,6 +149,10 @@ tomorrow:${' '}
   )
 })
 
+const ZX_EXPECT_OUTPUT = `$ echo "123"
+123
+red []`
+
 /**
  * compile fake mjs
  */
@@ -158,12 +162,16 @@ test('zx v5', async () => {
     `${process.cwd()}/register.js`,
     `${process.cwd()}/tests/zx/index.ts`,
   ])
-  assert.equal(
-    stdout.trim(),
-    `$ echo "123"
-123
-red []`
-  )
+  assert.equal(stdout.trim(), ZX_EXPECT_OUTPUT)
+})
+
+test('zx-pro v6', async () => {
+  const { stdout } = await execa('node', [
+    '-r',
+    `${process.cwd()}/register.js`,
+    `${process.cwd()}/tests/zx/pro.ts`,
+  ])
+  assert.equal(stdout.trim(), ZX_EXPECT_OUTPUT)
 })
 
 test.run()
