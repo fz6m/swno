@@ -1,7 +1,7 @@
 {
   "name": "swcr",
   "description": "Swc register for node.js. Efficient typescript runtime",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "main": "register.js",
   "author": "fz6m",
   "homepage": "https://github.com/fz6m/swno/tree/main/packages/swcr#README",
