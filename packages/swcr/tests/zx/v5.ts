@@ -1,8 +1,7 @@
-import 'zx/globals'
+import 'zx-v5/globals'
 
 const run = async () => {
-  const r = await $`echo "123"`
-  console.log(r.stdout)
+  await $`echo "123"`
   console.log(chalk.red('red'), globby.globbySync(path.join(__dirname, './s')))
 }
 

@@ -26,7 +26,8 @@
     "only-allow": "^1.1.1",
     "prettier": "^2.7.1",
     "typescript": "4.7.4",
-    "zx": "^5.2.0",
+    "zx": "^7.0.7",
+    "zx-v5": "npm:zx@^5.0.0",
     "zx-pro": "^6.1.0"
   },
   "lint-staged": {
