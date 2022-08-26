@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "description": "Typescript simple runtime powered by Swc",
+  "private": true,
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky install",
@@ -14,19 +14,19 @@
     "clean:output": "vary clean:output"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.23.1",
+    "@changesets/cli": "^2.24.3",
     "@fz6m/eslint-plugin-sakina": "^2.0.2",
     "@xn-sakina/vary": "^1.0.2",
     "commit-verify": "^1.0.3",
-    "eslint": "^8.19.0",
+    "eslint": "^8.22.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "only-allow": "^1.1.1",
     "prettier": "^2.7.1",
-    "typescript": "4.7.4",
-    "zx": "^7.0.7",
+    "typescript": "4.8.2",
+    "zx": "^7.0.8",
     "zx-v5": "npm:zx@^5.0.0",
     "zx-pro": "^6.1.0"
   },
