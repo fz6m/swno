@@ -5,11 +5,11 @@ Swc register for node.js. Efficient typescript runtime.
 ## Install
 
 ```bash
-npm i -D swcr @swc/core regenerator-runtime
+npm i -D swcr @swc/core
 # or
-yarn add -D swcr @swc/core regenerator-runtime
+yarn add -D swcr @swc/core
 # or
-pnpm add -D swcr @swc/core regenerator-runtime
+pnpm add -D swcr @swc/core
 ```
 
 ## Usage

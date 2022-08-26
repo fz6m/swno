@@ -27,7 +27,6 @@
   "dependencies": {
     "@swc/core": "1.2.244",
     "cross-spawn": "7.0.3",
-    "regenerator-runtime": "0.13.9",
     "swcr": "workspace:*"
   },
   "license": "MIT"
