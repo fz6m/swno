@@ -1,5 +1,16 @@
 # swno
 
+## 1.3.0
+
+### Minor Changes
+
+- remove regenerator-runtime, not needed
+
+### Patch Changes
+
+- Updated dependencies
+  - swcr@1.3.0
+
 ## 1.2.0
 
 ### Minor Changes

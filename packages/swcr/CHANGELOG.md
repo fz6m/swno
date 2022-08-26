@@ -1,5 +1,11 @@
 # swcr
 
+## 1.3.0
+
+### Minor Changes
+
+- remove regenerator-runtime, not needed
+
 ## 1.2.0
 
 ### Minor Changes
