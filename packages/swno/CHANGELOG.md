@@ -1,5 +1,13 @@
 # swno
 
+## 1.3.1
+
+### Patch Changes
+
+- upgrade swc version
+- Updated dependencies
+  - swcr@1.3.1
+
 ## 1.3.0
 
 ### Minor Changes
