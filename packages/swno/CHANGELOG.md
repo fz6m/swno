@@ -1,5 +1,13 @@
 # swno
 
+## 1.3.2
+
+### Patch Changes
+
+- deps upgrade
+- Updated dependencies
+  - swcr@1.3.2
+
 ## 1.3.1
 
 ### Patch Changes
