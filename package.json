@@ -1,5 +1,4 @@
 {
-  "version": "1.0.0",
   "private": true,
   "scripts": {
     "preinstall": "npx only-allow pnpm",
@@ -14,19 +13,19 @@
     "clean:output": "vary clean:output"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.25.2",
+    "@changesets/cli": "^2.26.1",
     "@fz6m/eslint-plugin-sakina": "^2.0.2",
-    "@xn-sakina/vary": "^1.0.2",
-    "commit-verify": "^1.0.3",
-    "eslint": "^8.29.0",
-    "eslint-config-prettier": "^8.5.0",
+    "@xn-sakina/vary": "^1.1.1",
+    "commit-verify": "^1.1.0",
+    "eslint": "^8.43.0",
+    "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "husky": "^8.0.2",
-    "lint-staged": "^13.1.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
     "only-allow": "^1.1.1",
-    "prettier": "^2.8.1",
+    "prettier": "^2.8.8",
     "typescript": "4.9.4",
-    "zx": "^7.1.1",
+    "zx": "^7.2.2",
     "zx-v5": "npm:zx@^5.0.0",
     "zx-pro": "^6.1.0"
   },
@@ -40,10 +39,10 @@
   },
   "engines": {
     "node": ">=16",
-    "pnpm": "^7.0.1",
+    "pnpm": "^8",
     "yarn": "forbidden, use pnpm",
     "npm": "forbidden, use pnpm"
   },
-  "packageManager": "pnpm@7.2.1",
+  "packageManager": "pnpm@8.6.0",
   "license": "MIT"
 }
