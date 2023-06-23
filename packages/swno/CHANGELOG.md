@@ -1,5 +1,16 @@
 # swno
 
+## 2.0.0
+
+### Major Changes
+
+- Upgrade deps version and not lock swc core version
+
+### Patch Changes
+
+- Updated dependencies
+  - swcr@2.0.0
+
 ## 1.3.2
 
 ### Patch Changes

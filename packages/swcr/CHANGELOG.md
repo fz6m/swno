@@ -1,5 +1,11 @@
 # swcr
 
+## 2.0.0
+
+### Major Changes
+
+- Upgrade deps version and not lock swc core version
+
 ## 1.3.2
 
 ### Patch Changes
